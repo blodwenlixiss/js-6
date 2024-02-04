@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.placement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.placement-inside {
+  position: absolute;
+  top: 30%;
+}
+#registration {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
