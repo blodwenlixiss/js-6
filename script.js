@@ -43,13 +43,86 @@
 //   }
 // });
 
-const pushInput = document.getElementById("pushInput");
-const submitButton = document.getElementById("submit-button");
-const li = document.createElement("li");
-const arr = [];
-const pushToArr = function () {
-  arr.push(pushInput.value);
-  for (let i = 0; i < arr.length; i++) {}
-};
-// pushToArr(pushInput);
-submitButton.addEventListener("click", pushToArr);
+// დავალება 2
+// დაამატეთ ინფუთის ველი;
+// ღილაკზე დაჭერისას , რასაც ჩაწერთ ინფუთის ველში, დააფუშეთ ცარიელ მასივში;
+//  ამ მასივში შენახული  მნიშვნელობები გამოიტანეთ li ტეგების შიგნით.
+
+// const pushInput = document.getElementById("pushInput");
+// const submitButton = document.getElementById("submit-button");
+
+// const listDiv = document.querySelector(".list");
+// const arr = [];
+// const pushToArr = function () {
+//   arr.push(pushInput.value);
+//   let ul = document.querySelector("ul");
+//   if (!ul) {
+//     ul = document.createElement("ul");
+//     listDiv.appendChild(ul);
+//   }
+//   ul.innerHTML = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     const li = document.createElement("li");
+//     li.textContent = arr[i];
+//     ul.appendChild(li);
+//   }
+// };
+// // pushToArr(pushInput);
+// submitButton.addEventListener("click", pushToArr);
+
+// დავალება 3
+// შექმენით 5 ელემენტიანი  ობიექტების მასივი (სახელი, გვარი, ასაკი, პროფესია);
+//  გაფილტრეთ ის ელემენტები, რომლის ასაკიც მეტია 18ზე;
+// გამოიტანეთ მხოლოდ გაფილტრული ობიექტები  li კონტენტის შიგნით.
+
+// const listDiv = document.querySelector(".list");
+// // const ul = document.createElement("ul");
+
+// const persons = [
+//   {
+//     name: "luka",
+//     lastname: "goginashvili",
+//     age: 22,
+//     profession: "developer",
+//   },
+//   {
+//     name: "gioegi",
+//     lastname: "bazadze",
+//     age: 16,
+//     profession: "back-end developer",
+//   },
+//   {
+//     name: "nikita",
+//     lastname: "bespalov",
+//     age: 24,
+//     profession: "graphic designer",
+//   },
+//   {
+//     name: "irakli",
+//     lastname: "romanchenko",
+//     age: 17,
+//     profession: "student",
+//   },
+//   {
+//     name: "lizi",
+//     lastname: "nijaradze",
+//     age: 18,
+//     profession: "student",
+//   },
+// ];
+
+// const filterAge = function (arr) {
+//   arr.filter((el) => {
+//     let ul = document.createElement("ul");
+//     listDiv.appendChild(ul);
+//     if (el.age > 18) {
+//       console.log(el);
+//       for (let i = 0; i < 1; i++) {
+//         const li = document.createElement("li");
+//         li.textContent = `${el.name} ${el.lastname} ${el.age} ${el.profession}`;
+//         ul.appendChild(li);
+//       }
+//     }
+//   });
+// };
+// filterAge(persons);
