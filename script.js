@@ -8,6 +8,7 @@
 // const submit = document.getElementById("submitBtn");
 // const textArea = document.getElementById("text-area");
 // const text = document.getElementById("text-content");
+// const emailvalid = /^({a-z\d\.-}+)\@({a-z\d-}+)\.({a-z}{2,8})?  $/;
 // form.addEventListener("submit", (e) => {
 //   e.preventDefault();
 //   // const formValues = document.forms.registration;
@@ -27,6 +28,10 @@
 //     if (textArea.value.length > 100) {
 //       throw new Error("too many characters");
 //     }
+//     if (emailvalid.test(email.value)) {
+//       throw new Error("email invalid");
+//     }
+
 //     const data = {
 //       username: userName.value,
 //       lastName: lastName.value,
@@ -34,6 +39,8 @@
 //       password: password.value,
 //       confirmPassword: confirmPassword.value,
 //     };
+//     console.log(data);
+
 //     text.textContent = "Registration successful";
 //     text.style.color = "green";
 //     console.log(data);
@@ -50,9 +57,9 @@
 
 // const pushInput = document.getElementById("pushInput");
 // const submitButton = document.getElementById("submit-button");
-
 // const listDiv = document.querySelector(".list");
 // const arr = [];
+
 // const pushToArr = function () {
 //   arr.push(pushInput.value);
 //   let ul = document.querySelector("ul");
